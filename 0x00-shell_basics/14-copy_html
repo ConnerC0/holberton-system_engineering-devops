@@ -1,2 +1,2 @@
-#!/binb/ash
+#!/bin/bash
 cp -r -u -a *.html ../
