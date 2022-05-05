@@ -1,0 +1,2 @@
+#!/binb/ash
+cp -r -u -a *.html ../
