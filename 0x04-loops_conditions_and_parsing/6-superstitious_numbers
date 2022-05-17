@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#This script is displaying 1-20. On 4 it will state after, "bad luck from China." On 9 it will state after, "bad luck from Japan." On 17 it will state after, "bad luck from Italy."
+n=0
+while [ $n -lt 20 ]
+do
+	((n++))
+	echo $n
+	case $n in
+	
+		4)
+			echo "bad luck for China" ;;
+		9)
+			echo "bad luck for Japan" ;;
+		17)
+			echo "bad luck for Italy" ;;
+	
+	esac
+	
+done

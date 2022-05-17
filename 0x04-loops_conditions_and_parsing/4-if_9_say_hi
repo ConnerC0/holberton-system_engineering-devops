@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#This script is displaying "Hi" on line 9 instead of "Best School"
+n=1
+while [ $n -lt 10 ]
+do
+	if [ $n == 9 ]
+	then
+		echo "Hi"
+	fi
+	echo "Best School" $n | cut -d" " -f-2
+	((n++))
+done

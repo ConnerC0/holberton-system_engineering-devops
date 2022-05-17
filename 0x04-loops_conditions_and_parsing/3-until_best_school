@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#This script is displaying Best School 10 times using until loop
+i=1
+count=10
+until [ $count -lt $i ]
+do
+	echo "Best School" $i | cut -d" " -f-2
+	((i++))
+done
