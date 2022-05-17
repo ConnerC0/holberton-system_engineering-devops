@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#This script is printing out 0 to 12 hours and 1 to 59 minutes on a clock
+h=-1
+m=0
+while [ $m -lt 59 ]
+do
+	((m++))
+	if [ $m == 1 ]
+	then
+		echo "Minute: $m"
+		continue
+	fi
+	echo $m
+done
+while [ $h -lt 12 ]
+do
+	((h++))
+	if [ $h == 0 ]
+	then
+		echo "Hour: $h"
+		continue
+	fi
+	echo $h
+done
