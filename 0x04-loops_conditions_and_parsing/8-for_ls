@@ -2,5 +2,5 @@
 #This script is displaying the list of files using the for loop
 for FILE in *
 do
-	echo $FILE | cut -d- -f2
+	echo "$FILE" | cut -d- -f2
 done
